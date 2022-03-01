@@ -1,0 +1,64 @@
+.centered {
+  text-align: center;
+  font-family: perpetua, monospace, sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2,
+h3 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.75em;
+}
+
+button,
+input {
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.75em;
+}
+li {
+  display: inline;
+}
+
+li:nth-child(odd) {
+  background-color: #fdeb9d;
+}
+li:nth-child(even) {
+  background-color: #720e9e;
+  color: white;
+}
+
+#output {
+  font-size: 4em;
+}
+
+html {
+  background: url('https://sa1s3optim.patientpop.com/assets/images/provider/photos/2258607.jpg')
+    no-repeat center fixed;
+  background-size: contain;
+  color: #720e9e;
+}
+.guessesSoFar,
+.hints {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+.guessesSoFar > li,
+.hints > li {
+  flex-grow: 1;
+}
+div#feedback {
+  margin-top: 0;
+  margin-bottom: 0;
+}
