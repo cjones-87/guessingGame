@@ -70,17 +70,15 @@ class Game {
   }
 
   provideHint() {
-    let arrayOfHints = [];
-    arrayOfHints.push(this.winningNumber);
-    while (arrayOfHints.length < 10) {
-      if (
-        generateWinningNumber() !== this.winningNumber &&
-        arrayOfHints.indexOf(generateWinningNumber() === -1)
-      ) {
-        arrayOfHints.push(generateWinningNumber());
+    let dictionary = {};
+    dictionary[String(this.winningNumber)] = 1;
+    while (Object.keys(dictionary).length !== 10) {
+      let newHint = generateWinningNumber();
+      if (!dictionary[String(newHint)]) {
+        dictionary[String(newHint)] = 1;
       }
     }
-    return shuffle(arrayOfHints);
+    return shuffle(Object.keys(dictionary));
   }
 }
 
