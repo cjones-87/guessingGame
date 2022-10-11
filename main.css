@@ -42,9 +42,9 @@ li:nth-child(even) {
 }
 
 html {
-  background: url('https://sa1s3optim.patientpop.com/assets/images/provider/photos/2258607.jpg')
+  background: url('https://images.unsplash.com/photo-1650024520239-c7fc2bbfa340?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDE0fHxndWVzc2luZyUyMGdhbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60')
     no-repeat center fixed;
-  background-size: contain;
+  background-size: cover;
   color: #720e9e;
 }
 .guessesSoFar,
