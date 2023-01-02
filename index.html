@@ -5,7 +5,6 @@
     <title>Guessing Game</title>
     <link rel="stylesheet" href="main.css" />
     <!-- the MAIN.CSS file is linked here -->
-    <script src="../js/guessing-game.js" defer></script>
   </head>
   <body>
     <div class="centered">
@@ -20,63 +19,63 @@
       </p>
     </div>
 
-<hr>
+    <hr />
     <div class="centered">
-      
-      
-        <input placeholder = "Suppositions Here: " minlength="1" maxlength="3" min ="1" max = "100"/>
-        <button id="presumptionButton"  type = "submit">Make A Presumption!</button>
-       <br />
-      </div>
-<hr>
-      <div class = "centered">
-        <button id="hint">Use A Lifeline?</button>
-      </div>
-<hr>
-      <div id = 'refreshButton' class = "centered">
-        <button onClick="refresh(this)">Adventure Anew!</button><br />
-        <script defer>
-          function refresh(){
-                window.location.reload()
-              }
-        </script>
+      <input
+        placeholder="Suppositions Here: "
+        minlength="1"
+        maxlength="3"
+        min="1"
+        max="100"
+      />
+      <button id="presumptionButton" type="submit">Make A Presumption!</button>
+      <br />
     </div>
-<hr>
-    <div id = #feedback class="centered">
+    <hr />
+    <div class="centered">
+      <button id="hint">Use A Lifeline?</button>
+    </div>
+    <hr />
+    <div id="refreshButton" class="centered">
+      <button onClick="refresh(this)">Adventure Anew!</button><br />
+      <script defer>
+        function refresh() {
+          window.location.reload();
+        }
+      </script>
+    </div>
+    <hr />
+    <div id="#feedback" class="centered">
       <p id="output"></p>
     </div>
-    
 
-      <div id = 'guessContainer' class="centered">
-        <h3>Guesses Made So Far:</h3>
-        <ul class = "guessesSoFar">
-          <li >-</li>
-          <li >-</li>
-          <li >-</li>
-          <li >-</li>
-          <li >-</li>
-        </ul>
-      </div>
-<hr>
-      <div class="centered">
-        <h3>Bank of Hints</h3>
-        <ul class = "hints">
-          <li id = 'hint1' >-</li>
-          <li id = 'hint2'>-</li>
-          <li id = 'hint3'>-</li>
-          <li id = 'hint4' >-</li>
-          <li id = 'hint5'>-</li>
-          <li id = 'hint6'>-</li>
-          <li id = 'hint7'>-</li>
-          <li id = 'hint8' >-</li>
-          <li id = 'hint9'>-</li>
-          <li id = 'hint10'>-</li>
-          
-        </ul>
-      </div>
-
+    <div id="guessContainer" class="centered">
+      <h3>Guesses Made So Far:</h3>
+      <ul class="guessesSoFar">
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+      </ul>
     </div>
-  </div>
-  <script src='js/guessing-game.js'></script> 
+    <hr />
+    <div class="centered">
+      <h3>Bank of Hints</h3>
+      <ul class="hints">
+        <li id="hint1">-</li>
+        <li id="hint2">-</li>
+        <li id="hint3">-</li>
+        <li id="hint4">-</li>
+        <li id="hint5">-</li>
+        <li id="hint6">-</li>
+        <li id="hint7">-</li>
+        <li id="hint8">-</li>
+        <li id="hint9">-</li>
+        <li id="hint10">-</li>
+      </ul>
+    </div>
+
+    <script src="js/guessing-game.js" defer></script>
   </body>
 </html>
